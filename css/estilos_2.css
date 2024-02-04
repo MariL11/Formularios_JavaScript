@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url('../img/Fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'calibri';
+}
+
+fieldset{
+    width: 480px;
+    background: white;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    border-radius: 4px;
+    color: #1a1f36;
+    box-shadow: 1px 1px 10px black;
+    margin: auto;
+    margin-top: 25px;
+    border: 1px solid white;
+    
+}
+
+fieldset > h3{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(84, 105, 212);
+    font-weight: bold;
+    font-size:x-large;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label, legend{
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.a{
+    font-weight: normal;
+    margin-left: 40px;
+}
+
+input {
+    border-radius: 4px;
+    background: white;
+}
+
+
+#labelPais{
+    margin-top: 40px;
+}
+
+#enviar{
+    background:  rgb(84, 105, 212);
+    color: white;
+    height: 30px;
+    border: 2px solid black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 40px;
+}
+
+#enviar:active{
+    box-shadow: 0 0 10px black;
+}
+
+#borrar{
+    position: relative;
+    bottom: 50px;
+    left: 230px;
+    margin-top: 20px;
+    background:  rgb(84, 105, 212);
+    color: white;
+    height: 30px;
+    border: 2px solid black;
+    font-weight: bold;
+    letter-spacing: 1px
+}
+
+#borrar:active{
+    box-shadow: 0 0 10px black;
+}
+
+#resultado{
+    width: 480px;
+    margin-bottom: 150px;
+    padding-left: 20px;
+    margin: auto;
+    margin-top: 50px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px black;
+    margin-bottom: 20px;
+    
+}
+
+
+#nombre, #codigo, #pais, #enviar, #borrar{
+    width: 220px;
+}
+
+
+.error {
+    background-color:  #ff0000;
+}
+
+.correcto{
+    background-color: greenyellow;
+}
+
+.foco{
+    background-color: yellow;
+}
+
+#errorNombre, #errorCodigo{
+    color: #ff0000;
+    visibility: hidden;
+    position: relative;
+    left: 250px;
+    bottom: 22px;
+}
+
+#errorPlan{
+    color: #ff0000;
+    visibility:hidden;
+    position: relative;
+    left: 250px;
+    top: 25px;
+}
+
+#errorPais{
+    color: #ff0000;
+    visibility:hidden;
+    position: relative;
+    left: 250px;
+    bottom: 22px;
+}
+
+#contadorVisitas {
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+    margin-left: 5px;
+}
+
+
