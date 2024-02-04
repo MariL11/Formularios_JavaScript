@@ -16,4 +16,3 @@ Este ejercicio se va a realizar con la forma con objeto regexp (antes de existir
 
 Este ejercicio se va a realizar con la forma de validación de formularios HTML5. Debe tener código Javascript que trabaje con el HTML5.
 
-[Página índice](./html/indice.html)
