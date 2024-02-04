@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea</title>
+    <script src="../javascript/solicitud.js"></script>
+    <link rel="stylesheet" href="../css/estilos_1.css">
+</head>
+<body>
+    <fieldset>
+        <h3>Solicitud de Admisión en el Congreso</h3>
+        <form name="solicitudAdmision" id="solicitudAdmision" action="http://www.google.es"  method="get">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder=" Entre 10 y 25 carácteres">
+            <label for="nacionalidad">Nacionalidad:</label>
+            <select name="nacionalidad" id="nacionalidad">
+                <option value="0" selected="selected" disabled>Seleccione Nacionalidad</option>
+                <option value="Española">Española</option>
+                <option value="Francesa">Francesa</option>
+                <option value="Portuguesa">Portuguesa</option>
+                <option value="Italiana">Italiana</option>
+                <option value="Alemana">Alemana</option>
+            </select>
+            <label for="contrasenia">Contraseña:</label>
+            <input type="password" name="contrasenia" id="contrasenia" placeholder=" Entre 8 y 21 carácteres">
+
+            <label for="contraseniaRepeticion">Repetir Contraseña:</label>
+            <input type="password" name="contraseniaRepeticion" id="contraseniaRepeticion">
+            <input type="button" name="mostrarContrasenias" id="mostrar" value="Mostrar Contraseñas">
+
+
+            <input type="reset" name="reiniciar" id="reiniciar" value="Reiniciar">
+            <input type="submit" name="enviar" id="enviar" value="Enviar">
+        </form>
+    </fieldset>
+
+    <div id="resultado"></div>
+</body>
+</html>
