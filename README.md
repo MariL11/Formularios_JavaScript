@@ -25,3 +25,4 @@ Patrones utilizados:
 - Código: ^[A-Za-zÑñ][0-9]{3,7}$
 - País: ^[A-ZÑ][a-zñ]+(\s[A-ZÑ][a-zñ]+)*$
 
+[Página principal](https://maril11.github.io/Formularios_JavaScript/html/indice.html)
