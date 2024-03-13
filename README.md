@@ -14,7 +14,7 @@ Este ejercicio se va a realizar con la forma con objeto regexp (antes de existir
 
 Patrones utilizados:
 - Nombre: [A-Za-zñÑ]{10,25}$
-- Contraseña: (?=^[^çÇ,$])(?!.* select)(?!.* where)(?!.* ;)(?=^[^\d]*\d[^\d]*\d?[^\d]+)(^.{6,19})([.][0-9]$) -> Ejemplo de contraseña: Asdfg12.3
+- Contraseña: (?=^[^çÇ,$])(?=^\D*\d\D*\d?\D*\d?\D*$)(?!.*where)(?!.*select)(?!.*;)(?=.*\d\.$)(^.{8,21}$) -> Ejemplo de contraseña: Asdfg12.3
 
 ### 2. Creación de planes malvados a ofertar.
 
