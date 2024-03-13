@@ -120,11 +120,11 @@ function validarNacionalidad(){
 
 // Permite validar la contraseñia introducida en el formulario
 function validarContrasenia(){
-	let patron = /(?=^[^çÇ,$])(?=^\D*\d\D*\d?\D*\d?\D*$)(?!.*where)(?!.*select)(?!.*;)(?=.*\d\.$)(^.{8,21}$)/; 
+	let patron = /(?=^[^çÇ,$])(?=^\D*\d\D*\d?\D*\d?\D*$)(?!.*where)(?!.*select)(?!.*;)(?=.*\.\d$)(^.{8,21}$)/; 
 				// (?=^[^çÇ,$]) -> La cadena no puede empezar por 'Ç', por 'ç', por ',' o ' por '$'.
 				// (?!.*select)(?!.*where)(?!.*;) -> La cadena no pueder contener las palabras 'select', 'where' y el carácter ';'.
 				// (?=^\D*\d\D*\d?\D*\d?\D*$) -> La cadena debe tener un número y opcionalmente un segundo o tercer número, sin tener que ser consecutivos y con otros carácteres no numéricos permitidos entre ellos.
-				// (?=.*\d\.$) -> La cadena debe tener un número precedido de un punto.
+				// (?=.*\.\d$) -> La cadena debe tener un punto precedido de un número.
 				// ([^.{8,21}$) -> La cadena debe tener un minímo de 8 carácteres y un máximo de 21 carácteres.
 
 	let devolver = true;
